@@ -28,7 +28,7 @@ public final class BenchmarkRunner {
         this.task = task;
     }
 
-    @SuppressForbidden(reason = "system out is ok for a command line tool")
+    @SuppressForbidden(reason = "system out is ok for a command line tools")
     public void run() {
         SampleRecorder recorder = new SampleRecorder(iterations);
         System.out.printf(
